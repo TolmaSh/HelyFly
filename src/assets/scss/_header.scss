@@ -1,7 +1,50 @@
 .header {
+    @include media(sm) {
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        height: 60px;
         border: 1px solid red;
+        @include media(sm) {
+            height: 100px;
+            
+        }
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__phone-mobile {
+        margin-left: 45px;
+        @include text(14px, 17px, 400);
+        color: $linkColor;
+        text-decoration: none;
+        @include media(xs) {
+            display: none;
+        }
+    }
+    &__phone {
+        display: none;
+        &-text {
+            @include text(14px , 17px , 400);
+            color: $textColorLight;
+        }
+        &-link {
+            @include text(14px , 17px , 400);
+            color: $textColor;
+            text-decoration: none;
+        }
+        @include media(xs) {
+            display: flex;
+            margin-left: 36px;
+        }
+    }
+    &__logo {
+        @include media(sm){
+            width: 128px;
+            height: 23px;
+        }
     }
 }
