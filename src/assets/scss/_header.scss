@@ -47,4 +47,9 @@
             height: 23px;
         }
     }
+    &__user {
+        @include media(md) {
+            display: none;
+        }
+    }
 }
