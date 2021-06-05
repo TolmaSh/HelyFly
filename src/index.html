@@ -1,46 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
     <title>gulp project</title>
-</head>
-<body>
-    <Header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__wrapper">
-                    <img class="header__logo" src="./assets/images/logo.svg" alt="Logo">
-                    <a class="header__phone-mobile" href="tel:8(800)-123-12-12">Москва</a>
-                    <div class="header__phone">
-                        <span class="header__phone-text">Телефон:</span>
-                        <a class="header__phone-link" href="tel:8(800)-123-12-12">8(800)-123-12-12</a>
-                    </div>
-                </div>
-                <a class="header__user" href="#"><img class="header__user-img" src="./assets/images/user.png" alt="UserLogin"></a>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__wrapper">
+            <img
+              class="header__logo"
+              src="./assets/images/logo.svg"
+              alt="Logo"
+            />
+            <a class="header__phone-mobile" href="tel:8(800)-123-12-12"
+              >Москва</a
+            >
+            <div class="header__phone">
+              <span class="header__phone-text">Телефон:</span>
+              <a class="header__phone-link" href="tel:8(800)-123-12-12"
+                >8(800)-123-12-12</a
+              >
             </div>
+          </div>
+          <a class="header__user" href="#"
+            ><img
+              class="header__user-img"
+              src="./assets/images/user.png"
+              alt="UserLogin"
+          /></a>
         </div>
-    </Header>
-          <section class="main">
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="main__inner">
+          <h1 class="main__title">
+            Эксклюзивная <span>фотосессия</span> при полете на вертолете
+          </h1>
+          <div class="main__price-box">
+            <div class="main__wrapper">
+              <span class="main__price-label">Стоимость:</span>
+              <span class="main__price">1500₽</span>
+            </div>
+            <img
+              class="main__percent"
+              src="./assets/images/percent.svg"
+              alt="percent"
+            />
+          </div>
+          <button class="main__btn btn">Забронировать место</button>
+        </div>
+      </div>
+    </section>
+    <section class="info">
         <div class="container">
-            <div class="main__inner">
-                <h1 class="main__title">Эксклюзивная <span>фотосессия</span> при полете на вертолете</h1>
-                <div class="main__price-box">
-                    <div class="main__wrapper">
-                        <span class="main__price-label">Стоимость:</span>
-                        <span class="main__price">1500₽</span>
+            <h2 class="info__title title">Фотосессия в вертолете</h2>
+            <div class="info__image">
+                <img class="info__image-item" src="./assets/images/info-image.jpg" alt="PhotoSesion" >
+            </div>
+            <div class="info__main">
+                <p class="info__text">
+
+                </p>
+                <ul class="info__list">
+                    <li class="info__item">3 часа съемки</li>
+                    <li class="info__item">Более 50 фотографий</li>
+                    <li class="info__item">Москва</li>
+                    <li class="info__item">Готовы ответить на любые вопросы</li>
+                </ul>
+            </div>
+            <div class="info__rating rating">
+                <img class="rating__img" src="./assets/images/champ.svg" alt="Champ" >
+                <div class="rating__main">
+                    <p class="rating__text">
+                        Более <span>50</span> отзывов с оценкой 
+                    </p>
+                    <div class="rating__stars">
+                        <div class="rating__group">
+                            <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+                            <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+                            <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+                            <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+                            <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio" checked>
+                            <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+                        </div>
                     </div>
-                    <img class="main__percent" src="./assets/images/percent.svg" alt="percent"/>
                 </div>
-                <button class="main__btn btn">Забронировать место</button>
+
             </div>
         </div>
     </section>
-
+    <script src="https://kit.fontawesome.com/bc5df98f86.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
