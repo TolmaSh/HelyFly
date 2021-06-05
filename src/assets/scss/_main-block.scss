@@ -3,6 +3,9 @@
     background-position: 62% 0;
     background-size: cover;
     color: $primaryColor;
+    @include media(sm) {
+        background-position: center;
+    }
     &__inner {
         display: flex;
         flex-direction: column;
