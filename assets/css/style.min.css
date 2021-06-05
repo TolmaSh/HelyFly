@@ -83,6 +83,9 @@ body {
   background-position: 62% 0;
   background-size: cover;
   color: #fff; }
+  @media (min-width: 768px) {
+    .main {
+      background-position: center; } }
   .main__inner {
     display: flex;
     flex-direction: column;
