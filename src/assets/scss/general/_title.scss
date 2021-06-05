@@ -2,4 +2,8 @@
     @include text(28px,34px,400);
     color:$textColor;
     text-align: center;
+    @include media(sm){
+        @include text(40px,49px,400);
+
+    }
 }

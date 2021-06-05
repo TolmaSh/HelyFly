@@ -1,9 +1,37 @@
 .info {
+   
+
     padding-top: 40px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "title title"
+        "image image"
+        "main main"
+        "rating rating";
+        @include media(md){
+            grid-template-areas: 
+            "title image"
+            "main image"
+            "rating rating";
+        }
+    }
+    @include media(sm){
+        padding-top: 50px;
+    }
     &__title {
+        grid-area: title;
         margin: 0 auto;
         max-width: 175px;
-
+        @include media(sm){
+            max-width: 280px;
+        }
+        @include media(md){
+            text-align: left;
+            margin: 0;
+        }
     }
     &__list {
         
@@ -60,18 +88,31 @@
             }
         }
     }
+    &__main {
+        grid-area: main;
+    }
     &__text {
         @include text(14px,20px,400);
         color:$textColor;
         margin-top: 30px;
         @include media(xs) {
             @include text(18px,26px,400);
+            max-width: 480px;
+        }
+        @include media(md){
+            margin-top: 15px;
         }
     }
     &__image {
+        grid-area: image;
         margin-top: 13px;
         position: relative;
-        
+        @include media(sm){
+            margin-top: 40px;
+        }
+        @include media(md){
+            margin-top: 0;
+        }
         &:after {
             content: "";
             position: absolute;
@@ -80,9 +121,13 @@
             bottom: 20px;
             right: 20px;
             background-image: url(../images/info-arrow.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
             @include media(xs) {
                 bottom: 30px;
                 right: 30px;
+                width: 16px;
+                height: 23px;
             }
             @include media(sm){
                 right: 40px;
@@ -99,11 +144,18 @@
         @include media(sm) {
             height: 437px;
         }
+        @include media(md) {
+            height: 374px;
+        }
 
         }
     }
     &__rating {
         margin-top: 38px;
+        grid-area: rating;
+        @include media(md){
+            max-width: 550px;
+        }
     }
 }
 
