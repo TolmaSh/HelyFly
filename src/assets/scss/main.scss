@@ -1,5 +1,7 @@
 @import "./abstracts/vars";
 @import "./abstracts/mixins";
+@import "./general/rating";
+@import "./general/title";
 
 *,
 *::after,
@@ -30,6 +32,6 @@ body {
     }
 }
 
-@import "./header";
-@import "./main-block";
-@import "./rating";
+@import "./blocks/header";
+@import "./blocks/main-block";
+@import "./blocks/info";

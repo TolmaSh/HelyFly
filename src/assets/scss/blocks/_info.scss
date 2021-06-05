@@ -1,0 +1,89 @@
+.info {
+    padding-top: 40px;
+    &__title {
+        margin: 0 auto;
+        max-width: 175px;
+
+    }
+    &__list {
+        
+        margin-top: 30px;
+    }
+    &__item {
+        @include text(14px,20px,400);
+        color:$textColor;
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        &:first-child {
+            
+            &:before {
+                content:  "";
+                display: block;
+                background-image: url(../images/info-clock.svg);
+                width: 32px;
+                height: 32px;
+                margin-right: 11px;
+            }
+            
+        }
+        &:nth-child(2) {
+            
+            &:before {
+                content:  "";
+                display: block;
+                background-image: url(../images/info-camera.svg);
+                width: 35px;
+                height: 28px;
+                margin-right: 8px;
+            }
+        }
+        &:nth-child(3) {
+            
+            &:before {
+                content:  "";
+                display: block;
+                background-image: url(../images/info-location.svg);
+                width: 33px;
+                height: 33px;
+                margin-right: 10px;
+            }
+        }
+        &:last-child {
+            
+            &:before {
+                content:"";
+                margin-right: 12px;
+                background-image: url(../images/info-question.svg);
+                width: 31px;
+                height: 31px;
+            }
+        }
+    }
+    &__text {
+        @include text(14px,20px,400);
+        color:$textColor;
+        margin-top: 30px;
+    }
+    &__image {
+        margin-top: 13px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 17px;
+            bottom: 20px;
+            right: 20px;
+            background-image: url(../images/info-arrow.svg);
+
+        }
+        &-item {
+           max-width: 100%;
+        }
+    }
+    &__rating {
+        margin-top: 38px;
+    }
+}
+
