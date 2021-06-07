@@ -2,8 +2,15 @@
     @include text(28px,34px,400);
     color:$textColor;
     text-align: center;
+    margin: 0 auto;
+    max-width: 175px;
+    @include media(md){
+        text-align: left;
+        margin: 0;
+    }
     @include media(sm){
         @include text(40px,49px,400);
+        max-width: 280px;
 
     }
 }

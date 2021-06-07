@@ -23,15 +23,7 @@
     }
     &__title {
         grid-area: title;
-        margin: 0 auto;
-        max-width: 175px;
-        @include media(sm){
-            max-width: 280px;
-        }
-        @include media(md){
-            text-align: left;
-            margin: 0;
-        }
+
     }
     &__list {
         
