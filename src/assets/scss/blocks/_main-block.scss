@@ -5,6 +5,7 @@
     color: $primaryColor;
     @include media(sm) {
         background-position: center;
+        background-size: 140%;
     }
     &__inner {
         display: flex;
