@@ -604,6 +604,9 @@ button {
 
 .booking {
   padding-bottom: 45px; }
+  @media (min-width: 1280px) {
+    .booking {
+      padding-bottom: 82px; } }
   .booking__title {
     font-size: 26px;
     line-height: 32px;
@@ -726,5 +729,12 @@ button {
       .booking__rating {
         border-top: none;
         padding-top: 40px; } }
+
+.map {
+  height: 245px;
+  width: 100%; }
+  @media (min-width: 576px) {
+    .map {
+      height: 509px; } }
 
 /*# sourceMappingURL=style.min.css.map */

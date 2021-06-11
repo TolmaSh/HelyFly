@@ -1,5 +1,8 @@
 .booking {
     padding-bottom: 45px;
+    @include media(md){
+        padding-bottom: 82px;
+    }
     &__title {
         @include text(26px,32px,400);
         max-width: 100%;

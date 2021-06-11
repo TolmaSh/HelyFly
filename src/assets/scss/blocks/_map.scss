@@ -1,0 +1,7 @@
+.map {
+    height: 245px;
+    width: 100%;
+    @include media(xs){
+        height: 509px;
+    }
+}
