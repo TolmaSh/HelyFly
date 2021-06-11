@@ -668,6 +668,7 @@ button {
         line-height: 26px;
         font-weight: 500; }
     .booking__date-btn {
+      cursor: pointer;
       display: none; }
       @media (min-width: 576px) {
         .booking__date-btn {
