@@ -16,6 +16,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     
 }
+button {
+    background-color: #fff;
+    border: none;
+}
 
 .container {
     padding: 0 15px;
@@ -37,3 +41,4 @@ body {
 @import "./blocks/info";
 @import "./blocks/gallery";
 @import "./blocks/photographer";
+@import "./blocks/booking";

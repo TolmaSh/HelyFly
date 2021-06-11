@@ -256,48 +256,147 @@
         
       </div>
     </section>
-    <section class="register">
-      <h2 class="register__title title">
-        Доступная съемка 
-в ближайщее время
+    <section class="booking">
+      <div class="container">
+      <h2 class="booking__title title">
+        Доступная съемка в ближайщее время
       </h2>
-      <div class="register__main">
-        <div class="register__date">
-          <h4 class="register__date-item">
+      <div class="booking__main">
+        <div class="booking__date">
+          <h4 class="booking__date-title">
             Пятница, <span>14</span> сентября
           </h4>
-          <button class="register__date-btn"></button>
+          <button class="booking__date-btn">
+            <img src="./assets/images/booking/calendar.svg" alt="calendar">
+          </button>
         </div>
-        <div class="register__info">
-          <span class="register__info-time">
-            15:00 - 18:00
-          </span>
-          <span class="register__info-price">
-            850$
-          </span>
-          <span class="register__info-seat">
-            Осталось — 1 место
-          </span>
-          <button class="register__info-btn">
+        <div class="booking__info">
+          <div class="booking__info-main">
+            <span class="booking__info-time">
+              15:00 - 18:00
+            </span>
+            <span class="booking__info-price">
+              850$
+            </span>
+            <span class="booking__info-seat">
+              Осталось — 1 место
+            </span>
+          </div>
+          
+          <button class="booking__info-btn">
             Выбрать
           </button>
         </div>
-        <div class="register__info">
-          <span class="register__info-time">
-            15:00 - 18:00
-          </span>
-          <span class="register__info-price">
-            850$
-          </span>
-          <span class="register__info-seat">
-            Осталось — 1 место
-          </span>
-          <button class="register__info-btn">
+        <div class="booking__info">
+          <div class="booking__info-main">
+            <span class="booking__info-time">
+              19:00 - 22:00
+            </span>
+            <span class="booking__info-price">
+              850$
+            </span>
+            <span class="booking__info-seat">
+              Осталось — 1 место
+            </span>
+          </div>
+          <button class="booking__info-btn">
             Выбрать
           </button>
+        </div>
+        <div class="booking__rating rating">
+          <img
+            class="rating__img"
+            src="./assets/images/champ.svg"
+            alt="Champ"
+          />
+          <div class="rating__main">
+            <p class="rating__text">
+              Более <span>50</span> отзывов с оценкой
+            </p>
+            <div class="rating__stars">
+              <div class="rating__group">
+                <input
+                  disabled
+                  checked
+                  class="rating__input rating__input--none"
+                  name="rating3"
+                  id="rating3-none"
+                  value="0"
+                  type="radio"
+                />
+                <label
+                  aria-label="1 star"
+                  class="rating__label"
+                  for="rating3-1"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+                <input
+                  class="rating__input"
+                  name="rating3"
+                  id="rating3-1"
+                  value="1"
+                  type="radio"
+                />
+                <label
+                  aria-label="2 stars"
+                  class="rating__label"
+                  for="rating3-2"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+                <input
+                  class="rating__input"
+                  name="rating3"
+                  id="rating3-2"
+                  value="2"
+                  type="radio"
+                />
+                <label
+                  aria-label="3 stars"
+                  class="rating__label"
+                  for="rating3-3"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+                <input
+                  class="rating__input"
+                  name="rating3"
+                  id="rating3-3"
+                  value="3"
+                  type="radio"
+                />
+                <label
+                  aria-label="4 stars"
+                  class="rating__label"
+                  for="rating3-4"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+                <input
+                  class="rating__input"
+                  name="rating3"
+                  id="rating3-4"
+                  value="4"
+                  type="radio"
+                  checked
+                />
+                <label
+                  aria-label="5 stars"
+                  class="rating__label"
+                  for="rating3-5"
+                  ><i class="rating__icon rating__icon--star fa fa-star"></i
+                ></label>
+                <input
+                  class="rating__input"
+                  name="rating3"
+                  id="rating3-5"
+                  value="5"
+                  type="radio"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
+    </div>
 
     </section>
     <script
