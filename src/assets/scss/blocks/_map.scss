@@ -1,7 +1,85 @@
 .map {
-    height: 245px;
-    width: 100%;
-    @include media(xs){
-        height: 509px;
+    position: relative;
+    &__item {
+        height: 245px;
+        width: 100%;
+        @include media(xs){
+            height: 509px;
+        }
     }
+    &__info {
+        display: none;
+        padding-left: 30px;
+        width: 420px;
+        height: 469px;
+        position: absolute;
+        top: 20px;
+        left: 70px;
+        background: #FFFFFF;
+        border: 1px solid #C7C7C7;
+        @include media(md){
+            display: block;
+        }
+        @include media(lg){
+            left: 300px;
+        }
+        @media (min-width: 1920px) {
+            left: 390px;
+        }
+
+        &-wrapper {
+            display: flex;
+            &:first-child {
+                margin-top: 50px;
+            }
+            &:nth-child(2) {
+                margin-top: 34px;
+            }
+            &:nth-child(3) {
+                margin-top: 35px;
+            }
+            &:last-child {
+                margin-top: 41px;
+            }
+        }
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include text(35px,51px,700);
+            color: #fff;
+            background: #FC9B09;
+            border-radius: 50%;
+            width: 61px;
+            height: 61px;
+            margin-right: 8px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            &--bg {
+                background-image: url('../images/photographer/maria.jpg');
+                background-size: cover;
+                background-position: center;
+
+            }
+            }
+        &-main {
+            display: flex;
+            flex-direction: column;
+        }
+        &-title {
+            @include text(18px,27px,500);
+        }
+        &-subtitle {
+            @include text(18px,26px,400);
+        }
+        &-link {
+            @include text(14px,21px,400);
+            color: $linkColor;
+            text-decoration: none;
+        }
+    }
+
+   
 }

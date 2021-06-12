@@ -5,6 +5,9 @@
     color: $primaryColor;
     @include media(sm) {
         background-position: center;
+        
+    }
+    @include media(md) {
         background-size: 140%;
     }
     &__inner {
