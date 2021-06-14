@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <title>gulp project</title>
   </head>
@@ -411,7 +415,7 @@
       </div>
     </section>
 
-    <div class="map">
+    <section class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.303636970917!2d30.45820601551507!3d50.62147597949935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b2b14eaeb4e49%3A0x791804283b8fc631!2z0JLQtdGA0YLQvtC70LXRgtC90LDRjyDQv9C70L7RidCw0LTQutCw!5e0!3m2!1sru!2sua!4v1623443699414!5m2!1sru!2sua"
         style="border: 0"
@@ -419,58 +423,117 @@
         loading="lazy"
         class="map__item"
       ></iframe>
-    
 
-    <div class="map__info">
-      <div class="map__info-wrapper">
-        <div class="map__info-img">1</div>
-      <div class="map__info-main">
-        <h4 class="map__info-title">
-          Где встречаемся?
-        </h4>
-        <span class="map__info-subtitle">
-          Москва
-        </span>
+      <div class="map__info">
+        <div class="map__info-wrapper">
+          <div class="map__info-img">1</div>
+          <div class="map__info-main">
+            <h4 class="map__info-title">Где встречаемся?</h4>
+            <span class="map__info-subtitle"> Москва </span>
+          </div>
+        </div>
+        <div class="map__info-wrapper">
+          <div class="map__info-img">2</div>
+          <div class="map__info-main">
+            <h4 class="map__info-title">Время съемки</h4>
+            <span class="map__info-subtitle"> 3 часа </span>
+          </div>
+        </div>
+        <div class="map__info-wrapper">
+          <div class="map__info-img">3</div>
+          <div class="map__info-main">
+            <h4 class="map__info-title">Мест осталось:</h4>
+            <span class="map__info-subtitle"> 2 места </span>
+          </div>
+        </div>
+        <div class="map__info-wrapper">
+          <div class="map__info-img map__info-img--bg"></div>
+          <div class="map__info-main">
+            <h4 class="map__info-title">Мария Иванова</h4>
+            <span class="map__info-subtitle"> Фотограф </span>
+            <a href="#" class="map__info-link">Показать больше информации</a>
+          </div>
+        </div>
       </div>
+
+      <div class="map__slider">
+        <div class="container">
+          <div class="map__slider-wrapper">
+            <div class="map__slider-swiper swiper">
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="swiper-content">
+                      <div class="swiper-image">
+                        1
+                      </div>
+                      <h4 class="swiper-title">
+                        Где встречаемся?
+                      </h4>
+                      <span class="swiper-subtitle">
+                        Москва
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-content">
+                      <div class="swiper-image">
+                        2
+                      </div>
+                      <h4 class="swiper-title">
+                        Время съемки
+                      </h4>
+                      <span class="swiper-subtitle">
+                        3 часа
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-content">
+                      <div class="swiper-image">
+                        3
+                      </div>
+                      <h4 class="swiper-title">
+                        Мест осталось
+                      </h4>
+                      <span class="swiper-subtitle">
+                        2 места
+                      </span>
+                    </div>
+                  </div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="map__slider-photographer">
+              <div class="map__slider-img"></div>
+              <div class="map__slider-text">
+                <h4 class="map__slider-title">Мария Иванова</h4>
+                <span class="map__slider-subtitle"> Фотограф </span>
+                <a href="#" class="map__slider-link"
+                  >Показать больше 
+                  информации 
+                  о фотографе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="map__info-wrapper">
-        <div class="map__info-img">2</div>
-      <div class="map__info-main">
-        <h4 class="map__info-title">
-          Время съемки
-        </h4>
-        <span class="map__info-subtitle">
-          3 часа
-        </span>
-      </div>
-      </div> <div class="map__info-wrapper">
-        <div class="map__info-img">3</div>
-      <div class="map__info-main">
-        <h4 class="map__info-title">
-          Мест осталось:
-        </h4>
-        <span class="map__info-subtitle">
-          2 места
-        </span>
-      </div>
-      </div> <div class="map__info-wrapper">
-        <div class="map__info-img map__info-img--bg"></div>
-      <div class="map__info-main">
-        <h4 class="map__info-title">
-          Мария Иванова
-        </h4>
-        <span class="map__info-subtitle">
-          Фотограф
-        </span>
-        <a href="#" class="map__info-link">Показать больше информации</a>
-      </div>
-      </div>
-    </div>
-    
+    </section>
     <script
       src="https://kit.fontawesome.com/bc5df98f86.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

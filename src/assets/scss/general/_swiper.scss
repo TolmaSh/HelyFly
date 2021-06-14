@@ -1,0 +1,76 @@
+.swiper {
+    
+    &-container {
+        height: 216px;
+        margin-top: 20px;
+        
+    }
+    &-button-next, &-button-prev {
+        color:#C7C7C7;
+        top: 40%;
+        &:after {
+            font-size: 20px;
+        }
+    }
+    @include media(xs){
+        &-button-next {
+            right: 77px;
+        }
+        &-button-prev {
+            left: 77px;
+        }
+    }
+    
+    &-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-bullet {
+            width: 10px;
+            height: 10px;
+            border: 0.5px solid #B3B3B3;
+            background: #fff;
+            &-active {
+                background: #FC9B09;
+                border: none;
+            }
+            
+        }
+    }
+    &-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    &-image {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            @include text(35px,51px,700);
+            color: #fff;
+            background: #FC9B09;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            
+    }
+    &-title {
+        @include text(16px,23px,400);
+        margin-top: 20px;
+
+    }
+    &-subtitle {
+        @include text(14px,20px,400);
+        margin-top: 10px;
+    }
+
+}

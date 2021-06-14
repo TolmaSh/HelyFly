@@ -1,7 +1,16 @@
 .map {
+    .container {
+        @include media(xs) {
+            padding: 0 88px;
+        }
+        @include media(sm) {
+            padding: 0 184px;
+        }
+        
+    }
     position: relative;
     &__item {
-        height: 245px;
+        height: 423px;
         width: 100%;
         @include media(xs){
             height: 509px;
@@ -29,6 +38,7 @@
 
         &-wrapper {
             display: flex;
+            
             &:first-child {
                 margin-top: 50px;
             }
@@ -67,6 +77,7 @@
         &-main {
             display: flex;
             flex-direction: column;
+            
         }
         &-title {
             @include text(18px,27px,500);
@@ -79,6 +90,63 @@
             color: $linkColor;
             text-decoration: none;
         }
+    }
+
+    &__slider {
+        @include media(md){
+            display: none;
+        }
+        margin-top: 52px;
+        &-wrapper {
+
+            height: 410px;
+            border: 1px solid #C7C7C7;
+            padding-bottom: 18px;
+            
+        }
+        &-photographer {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+           
+        }
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            line-height: 51px;
+            font-weight: 700;
+            color: #fff;
+            background-image: url(../images/photographer/maria.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            margin-right: 11px;
+        }
+        &-text {
+            max-width: 135px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-title {
+            @include text(16px,19px,400);
+        }
+        &-subtitle {
+            @include text(14px,21px,400);
+            margin-top: 5px;
+        }
+        &-link {
+            @include text(14px,21px,400);
+            color:$linkColor;
+            text-decoration: none;
+            margin-top: 7px;
+        }
+       
+
+
     }
 
    
