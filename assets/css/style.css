@@ -208,7 +208,9 @@ button {
   color: #fff; }
   @media (min-width: 768px) {
     .main {
-      background-position: center;
+      background-position: center; } }
+  @media (min-width: 1280px) {
+    .main {
       background-size: 140%; } }
   .main__inner {
     display: -ms-flexbox;
@@ -807,8 +809,83 @@ button {
         padding-top: 40px; } }
 
 .map {
-  height: 245px;
-  width: 100%; }
-  @media (min-width: 576px) {
-    .map {
-      height: 509px; } }
+  position: relative; }
+  .map__item {
+    height: 245px;
+    width: 100%; }
+    @media (min-width: 576px) {
+      .map__item {
+        height: 509px; } }
+  .map__info {
+    display: none;
+    padding-left: 30px;
+    width: 420px;
+    height: 469px;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7; }
+    @media (min-width: 1280px) {
+      .map__info {
+        display: block; } }
+    @media (min-width: 1440px) {
+      .map__info {
+        left: 300px; } }
+    @media (min-width: 1920px) {
+      .map__info {
+        left: 390px; } }
+    .map__info-wrapper {
+      display: -ms-flexbox;
+      display: flex; }
+      .map__info-wrapper:first-child {
+        margin-top: 50px; }
+      .map__info-wrapper:nth-child(2) {
+        margin-top: 34px; }
+      .map__info-wrapper:nth-child(3) {
+        margin-top: 35px; }
+      .map__info-wrapper:last-child {
+        margin-top: 41px; }
+    .map__info-img {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      font-size: 35px;
+      line-height: 51px;
+      font-weight: 700;
+      color: #fff;
+      background: #FC9B09;
+      border-radius: 50%;
+      width: 61px;
+      height: 61px;
+      margin-right: 8px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%; }
+      .map__info-img--bg {
+        background-image: url("../images/photographer/maria.jpg");
+        background-size: cover;
+        background-position: center; }
+    .map__info-main {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+    .map__info-title {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 500; }
+    .map__info-subtitle {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400; }
+    .map__info-link {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      color: #5286EC;
+      text-decoration: none; }
