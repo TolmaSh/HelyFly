@@ -1,0 +1,64 @@
+.reviews {
+    margin-top: 40px;
+    padding-bottom: 44px;
+    &__wrapper {
+        margin-top: 50px;
+        padding-bottom: 44px;
+        border-bottom: 0.5px solid #C7C7C7;
+    }
+    &__header {
+        display: flex;
+
+    }
+    &__info {
+        margin-left: 18px;
+    }
+    &__author {
+        @include text(16px,19px,500);
+
+    }
+    &__work-position {
+        display: inline-block;
+        margin-top: 6px;
+        @include text(14px,21px,400);
+    }
+    .rating {
+        padding: 0;
+        margin-top: 7px;
+        border: none;
+    }
+    &__img {
+    
+    object-fit: cover;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    }
+    &__short-text {
+        @include text(14px,21px,400);
+        color: #B3B3B3;
+        display: inline-block;
+        margin-top: 24px;
+        &:before {
+            content: "";
+            display: inline-block;
+            background-size: cover;
+            background-image: url('../images/reviews/like.svg');
+            width: 15px;
+            height: 11px;
+        }
+    }
+    &__main-text {
+        @include text(14px,21px,400);
+        margin-top: 14px;
+        padding-bottom: 43px;
+        @include media(xs) {
+            padding-bottom: 20px;
+        }
+    }
+    &__date {
+        @include text(14px,21px,400);
+        color: #B3B3B3;
+    }
+
+}
