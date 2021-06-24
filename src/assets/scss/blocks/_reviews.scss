@@ -1,20 +1,54 @@
 .reviews {
     margin-top: 40px;
     padding-bottom: 44px;
+    
     &__wrapper {
         margin-top: 50px;
         padding-bottom: 44px;
         border-bottom: 0.5px solid #C7C7C7;
+
+        @include media(sm){
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            padding-left: 120px;
+            padding-right: 38px;
+            position: relative;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+       
     }
     &__header {
         display: flex;
 
     }
+    &__title {
+        @include media(sm){
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: 400;
+            margin: 0;
+            text-align: left;
+            &:after {
+                content:':';
+            }
+        }
+    }
     &__info {
         margin-left: 18px;
+        @include media(sm) {
+            margin-left: 0;
+        }
     }
     &__author {
         @include text(16px,19px,500);
+        margin-top: 6px;
+        @include media(xs){
+            margin-top: 8px;
+        }
+        @include media(sm){
+            margin-top: 11px;
+        }
 
     }
     &__work-position {
@@ -33,12 +67,22 @@
     border-radius: 50%;
     width: 84px;
     height: 84px;
+    @include media(sm){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 101px;
+        height: 101px;
+    }
     }
     &__short-text {
         @include text(14px,21px,400);
         color: #B3B3B3;
         display: inline-block;
         margin-top: 24px;
+        @include media(sm){
+            align-self: end;
+        }
         &:before {
             content: "";
             display: inline-block;
@@ -48,12 +92,26 @@
             height: 11px;
         }
     }
+    &__content {
+        @include media(sm){
+            border-bottom: 0.5px solid #C7C7C7;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding-bottom: 24px;
+        }
+        
+    }
     &__main-text {
         @include text(14px,21px,400);
         margin-top: 14px;
         padding-bottom: 43px;
         @include media(xs) {
             padding-bottom: 20px;
+        }
+        @include media(sm){
+
+            margin-top: 20px;
+            padding-bottom: 22px;
         }
     }
     &__date {
