@@ -16,6 +16,17 @@
             border-bottom: none;
             padding-bottom: 0;
         }
+        @include media(md){
+            max-width: 655px;
+            padding-right: 0;
+        }
+
+    &--hide {
+        display: none;
+        @include media(xs){
+            display: grid;
+        }
+    }
        
     }
     &__header {
@@ -118,5 +129,30 @@
         @include text(14px,21px,400);
         color: #B3B3B3;
     }
+    &__btn {
+        @include text(17px,25px,400);
+        color: $linkColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        cursor: pointer;
+        margin-top: 40px;
+        &:after {
+            position: relative;
+            content: "";
+            display: inline-block;
+            width: 0.4em;
+            height: 0.4em;
+            border-right: 0.1em solid #C7C7C7;
+            border-top: 0.1em solid #C7C7C7;
+            transform: rotate(45deg);
+            margin-left: 0.5em;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+}
+}
 
 }

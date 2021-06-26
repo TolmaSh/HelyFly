@@ -1036,15 +1036,43 @@ button {
     margin-top: 50px;
     padding-bottom: 44px;
     border-bottom: 0.5px solid #C7C7C7; }
+    @media (min-width: 768px) {
+      .reviews__wrapper {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        padding-left: 120px;
+        padding-right: 38px;
+        position: relative;
+        border-bottom: none;
+        padding-bottom: 0; } }
   .reviews__header {
     display: -ms-flexbox;
     display: flex; }
+  @media (min-width: 768px) {
+    .reviews__title {
+      font-size: 20px;
+      line-height: 29px;
+      font-weight: 400;
+      margin: 0;
+      text-align: left; }
+      .reviews__title:after {
+        content: ':'; } }
   .reviews__info {
     margin-left: 18px; }
+    @media (min-width: 768px) {
+      .reviews__info {
+        margin-left: 0; } }
   .reviews__author {
     font-size: 16px;
     line-height: 19px;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-top: 6px; }
+    @media (min-width: 576px) {
+      .reviews__author {
+        margin-top: 8px; } }
+    @media (min-width: 768px) {
+      .reviews__author {
+        margin-top: 11px; } }
   .reviews__work-position {
     display: inline-block;
     margin-top: 6px;
@@ -1061,6 +1089,13 @@ button {
     border-radius: 50%;
     width: 84px;
     height: 84px; }
+    @media (min-width: 768px) {
+      .reviews__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 101px;
+        height: 101px; } }
   .reviews__short-text {
     font-size: 14px;
     line-height: 21px;
@@ -1068,6 +1103,10 @@ button {
     color: #B3B3B3;
     display: inline-block;
     margin-top: 24px; }
+    @media (min-width: 768px) {
+      .reviews__short-text {
+        -ms-flex-item-align: end;
+            align-self: end; } }
     .reviews__short-text:before {
       content: "";
       display: inline-block;
@@ -1075,6 +1114,12 @@ button {
       background-image: url("../images/reviews/like.svg");
       width: 15px;
       height: 11px; }
+  @media (min-width: 768px) {
+    .reviews__content {
+      border-bottom: 0.5px solid #C7C7C7;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding-bottom: 24px; } }
   .reviews__main-text {
     font-size: 14px;
     line-height: 21px;
@@ -1084,6 +1129,10 @@ button {
     @media (min-width: 576px) {
       .reviews__main-text {
         padding-bottom: 20px; } }
+    @media (min-width: 768px) {
+      .reviews__main-text {
+        margin-top: 20px;
+        padding-bottom: 22px; } }
   .reviews__date {
     font-size: 14px;
     line-height: 21px;
