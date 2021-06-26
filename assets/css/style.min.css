@@ -162,7 +162,8 @@ body {
 
 button {
   background-color: #fff;
-  border: none; }
+  border: none;
+  font-family: 'Montserrat', sans-serif; }
 
 .container {
   padding: 0 15px; }
@@ -944,6 +945,15 @@ button {
         position: relative;
         border-bottom: none;
         padding-bottom: 0; } }
+    @media (min-width: 1280px) {
+      .reviews__wrapper {
+        max-width: 655px;
+        padding-right: 0; } }
+    .reviews__wrapper--hide {
+      display: none; }
+      @media (min-width: 576px) {
+        .reviews__wrapper--hide {
+          display: grid; } }
   .reviews__header {
     display: flex; }
   @media (min-width: 768px) {
@@ -1034,5 +1044,30 @@ button {
     line-height: 21px;
     font-weight: 400;
     color: #B3B3B3; }
+  .reviews__btn {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #5286EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 40px; }
+    .reviews__btn:after {
+      position: relative;
+      content: "";
+      display: inline-block;
+      width: 0.4em;
+      height: 0.4em;
+      border-right: 0.1em solid #C7C7C7;
+      border-top: 0.1em solid #C7C7C7;
+      transform: rotate(45deg);
+      margin-left: 0.5em;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
 
 /*# sourceMappingURL=style.min.css.map */
