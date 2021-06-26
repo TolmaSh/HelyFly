@@ -1069,5 +1069,36 @@ button {
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg); }
+    @media (min-width: 768px) {
+      .reviews__btn {
+        margin-top: 45px; }
+        .reviews__btn:before {
+          position: relative;
+          content: "";
+          display: inline-block;
+          width: 0.4em;
+          height: 0.4em;
+          border-right: 0.1em solid #C7C7C7;
+          border-top: 0.1em solid #C7C7C7;
+          transform: rotate(135deg);
+          margin-right: 0.5em;
+          -webkit-transform: rotate(135deg);
+          -moz-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+          -o-transform: rotate(135deg); }
+        .reviews__btn:after {
+          position: relative;
+          content: "";
+          display: inline-block;
+          width: 0.4em;
+          height: 0.4em;
+          border-right: 0.1em solid #C7C7C7;
+          border-top: 0.1em solid #C7C7C7;
+          transform: rotate(135deg);
+          margin-left: 0.5em;
+          -webkit-transform: rotate(135deg);
+          -moz-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+          -o-transform: rotate(135deg); } }
 
 /*# sourceMappingURL=style.min.css.map */
