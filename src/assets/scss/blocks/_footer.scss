@@ -1,11 +1,28 @@
 .footer {
+    padding-bottom: 20px;
     &__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+    &__logo {
+        align-self: center;
     }
 
     &__socials {
         justify-self: end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        
+        &-item {
+           
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        
     }
 
     &__language {
@@ -69,7 +86,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 24px;
+            
             grid-column-start: 1;
                 grid-column-end: 3;
             &-text {
