@@ -27,7 +27,10 @@
     "IE 10"
   ],
   "main": "gulpfile.js",
-  "dependencies": {},
+  "homepage": "https:/TolmaSh.github.io/HelyFly",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
