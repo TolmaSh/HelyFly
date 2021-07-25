@@ -43,7 +43,8 @@
               class="header__user-img"
               src="./assets/images/user.png"
               alt="UserLogin"
-          /></a>
+          />
+        </a>
         </div>
       </div>
     </header>
@@ -95,7 +96,7 @@
               <li class="info__item">Готовы ответить на любые вопросы</li>
             </ul>
           </div>
-          <div class="info__rating rating">
+          <form action="#" class="info__rating rating">
             <img
               class="rating__img"
               src="./assets/images/champ.svg"
@@ -105,6 +106,7 @@
               <p class="rating__text">
                 Более <span>50</span> отзывов с оценкой
               </p>
+
               <div class="rating__stars">
                 <div class="rating__group">
                   <input
@@ -185,7 +187,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -252,10 +254,9 @@
                 alt="Photographer-Photo"
               />
               <button class="photographer__img-heart">
-                <object
-                  type="image/svg+xml"
-                  data="./assets/images/photographer/Vector.svg"
-                ></object>
+                <svg >
+                  <use xlink:href="./assets/images/icons.svg#Heart"></use>
+                </svg>
               </button>
             </div>
             <h4 class="photographer__name">Марина Иванова</h4>
@@ -311,7 +312,9 @@
               Пятница, <span>14</span> сентября
             </h4>
             <button class="booking__date-btn">
-              <img src="./assets/images/booking/calendar.svg" alt="calendar" />
+              <svg >
+                <use xlink:href="./assets/images/icons.svg#calendar"></use>
+              </svg>
             </button>
           </div>
           <div class="booking__info">
@@ -331,7 +334,7 @@
             </div>
             <button class="booking__info-btn">Выбрать</button>
           </div>
-          <div class="booking__rating rating">
+          <form action="#" ac class="booking__rating rating">
             <img
               class="rating__img"
               src="./assets/images/champ.svg"
@@ -348,7 +351,7 @@
                     checked
                     class="rating__input rating__input--none"
                     name="rating3.1"
-                    id="rating3-none"
+                    id="rating3.1-none"
                     value="0"
                     type="radio"
                   />
@@ -421,7 +424,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -555,22 +558,23 @@
                 Валерия Антонова
               </h3>
               <span class="reviews__work-position">Арт-директор</span>
-              <div class="reviews__rating rating"></div>
-              <div class="rating__stars">
-                <div class="rating__group">
-                  <input disabled="" checked="" class="rating__input rating__input--none" name="rating4" id="rating4-none" value="0" type="radio">
-                  <label aria-label="1 star" class="rating__label" for="rating4-1"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating4" id="rating3-1" value="1" type="radio">
-                  <label aria-label="2 stars" class="rating__label" for="rating4-2"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating4" id="rating4-2" value="2" type="radio">
-                  <label aria-label="3 stars" class="rating__label" for="rating4-3"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating4" id="rating4-3" value="3" type="radio">
-                  <label aria-label="4 stars" class="rating__label" for="rating4-4"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating4" id="rating4-4" value="4" type="radio" checked="">
-                  <label aria-label="5 stars" class="rating__label" for="rating4-5"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating4" id="rating4-5" value="5" type="radio">
+              <form action="#" class="reviews__rating rating">
+                <div class="rating__stars">
+                  <div class="rating__group">
+                    <input disabled="" checked="" class="rating__input rating__input--none" name="rating4" id="rating4-none" value="0" type="radio">
+                    <label aria-label="1 star" class="rating__label" for="rating4-1"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating4" id="rating4-1" value="1" type="radio">
+                    <label aria-label="2 stars" class="rating__label" for="rating4-2"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating4" id="rating4-2" value="2" type="radio">
+                    <label aria-label="3 stars" class="rating__label" for="rating4-3"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating4" id="rating4-3" value="3" type="radio">
+                    <label aria-label="4 stars" class="rating__label" for="rating4-4"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating4" id="rating4-4" value="4" type="radio" checked="">
+                    <label aria-label="5 stars" class="rating__label" for="rating4-5"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating4" id="rating4-5" value="5" type="radio">
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
           <span class="reviews__short-text">
@@ -592,22 +596,24 @@
                 Виталий Петров
               </h3>
               <span class="reviews__work-position">Фотограф</span>
-              <div class="reviews__rating rating"></div>
-              <div class="rating__stars">
-                <div class="rating__group">
-                  <input disabled="" checked="" class="rating__input rating__input--none" name="rating5" id="rating5-none" value="0" type="radio">
-                  <label aria-label="1 star" class="rating__label" for="rating5-1"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating5" id="rating5-1" value="1" type="radio">
-                  <label aria-label="2 stars" class="rating__label" for="rating5-2"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating5" id="rating5-2" value="2" type="radio">
-                  <label aria-label="3 stars" class="rating__label" for="rating5-3"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating5" id="rating5-3" value="3" type="radio">
-                  <label aria-label="4 stars" class="rating__label" for="rating5-4"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating5" id="rating5-4" value="4" type="radio" >
-                  <label aria-label="5 stars" class="rating__label" for="rating5-5"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating5" id="rating5-5" value="5" type="radio" checked="">
+              <form action="#" class="reviews__rating rating">
+                <div class="rating__stars">
+                  <div class="rating__group">
+                    <input disabled="" checked="" class="rating__input rating__input--none" name="rating5" id="rating5-none" value="0" type="radio">
+                    <label aria-label="1 star" class="rating__label" for="rating5-1"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating5" id="rating5-1" value="1" type="radio">
+                    <label aria-label="2 stars" class="rating__label" for="rating5-2"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating5" id="rating5-2" value="2" type="radio">
+                    <label aria-label="3 stars" class="rating__label" for="rating5-3"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating5" id="rating5-3" value="3" type="radio">
+                    <label aria-label="4 stars" class="rating__label" for="rating5-4"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating5" id="rating5-4" value="4" type="radio" >
+                    <label aria-label="5 stars" class="rating__label" for="rating5-5"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating5" id="rating5-5" value="5" type="radio" checked="">
+                  </div>
                 </div>
-              </div>
+              </form>
+             
             </div>
           </div>
           <span class="reviews__short-text">
@@ -629,22 +635,24 @@
                 Джим Керри
               </h3>
               <span class="reviews__work-position"></span>
-              <div class="reviews__rating rating"></div>
-              <div class="rating__stars">
-                <div class="rating__group">
-                  <input disabled="" checked="" class="rating__input rating__input--none" name="rating6" id="rating6-none" value="0" type="radio">
-                  <label aria-label="1 star" class="rating__label" for="rating6-1"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating6" id="rating6-1" value="1" type="radio">
-                  <label aria-label="2 stars" class="rating__label" for="rating6-2"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating6" id="rating6-2" value="2" type="radio" >
-                  <label aria-label="3 stars" class="rating__label" for="rating6-3"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating6" id="rating6-3" value="3" type="radio" checked="">
-                  <label aria-label="4 stars" class="rating__label" for="rating6-4"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating6" id="rating6-4" value="4" type="radio" >
-                  <label aria-label="5 stars" class="rating__label" for="rating6-5"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
-                  <input class="rating__input" name="rating6" id="rating6-5" value="5" type="radio">
+              <form action="#" class="reviews__rating rating">
+                <div class="rating__stars">
+                  <div class="rating__group">
+                    <input disabled="" checked="" class="rating__input rating__input--none" name="rating6" id="rating6-none" value="0" type="radio">
+                    <label aria-label="1 star" class="rating__label" for="rating6-1"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating6" id="rating6-1" value="1" type="radio">
+                    <label aria-label="2 stars" class="rating__label" for="rating6-2"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating6" id="rating6-2" value="2" type="radio" >
+                    <label aria-label="3 stars" class="rating__label" for="rating6-3"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating6" id="rating6-3" value="3" type="radio" checked="">
+                    <label aria-label="4 stars" class="rating__label" for="rating6-4"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating6" id="rating6-4" value="4" type="radio" >
+                    <label aria-label="5 stars" class="rating__label" for="rating6-5"><i class="rating__icon rating__icon--star fa fa-star" aria-hidden="true"></i></label>
+                    <input class="rating__input" name="rating6" id="rating6-5" value="5" type="radio">
+                  </div>
                 </div>
-              </div>
+              </form>
+             
             </div>
           </div>
           <span class="reviews__short-text">
@@ -666,9 +674,20 @@
         <div class="footer__wrapper">
             <img src="./assets/images/logo.svg" alt="logo" class="footer__logo">
             <div class="footer__socials">
-              <img src="./assets/images/vk.svg" alt="vkontakte" class="footer__socials-item">
-              <img src="./assets/images/Facebook.svg" alt="facebook" class="footer__socials-item">
-              <img src="./assets/images/Instragram.svg" alt="instagram" class="footer__socials-item">
+              <a href="#" class="footer__socials-item">
+                <svg class='footer__socials-item--vk'>
+                  <use xlink:href="./assets/images/icons.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-item">
+                <svg class='footer__socials-item--facebook'>
+                <use xlink:href="./assets/images/icons.svg#Facebook"></use>
+              </svg></a>
+              <a href="#" class="footer__socials-item">
+                <svg class='footer__socials-item--instagram'>
+                <use xlink:href="./assets/images/icons.svg#Instragram"></use>
+              </svg></a>
+              
             </div>
             <div class="footer__pay">
               <img src="./assets/images/MC.svg" alt="mastercard" class="footer__pay-item">

@@ -17,9 +17,30 @@
         gap: 30px;
         
         &-item {
-           
-            &:first-child {
+            
+            svg {
+                fill:gray;
+                max-height: 25px;
+                width: 25px;
+                transition:fill .3s ease-in-out ;
+            }
+            
+                
+                &:first-child {
                 margin-left: 0;
+                :hover {
+                    fill:#5476A4;
+                }
+            }
+            &:nth-child(2){
+                :hover {
+                    fill:#4A68AD;
+                }
+            }
+            &:last-child {
+                :hover {
+                    fill:#37373F;
+                }
             }
         }
         

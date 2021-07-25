@@ -1226,8 +1226,18 @@ button {
     -ms-flex-align: center;
         align-items: center;
     gap: 30px; }
-    .footer__socials-item:first-child {
-      margin-left: 0; }
+    .footer__socials-item {
+      width: 25px;
+      fill: gray;
+      transition: fill 4.5s ease-in; }
+      .footer__socials-item:first-child {
+        margin-left: 0; }
+        .footer__socials-item:first-child :hover {
+          fill: #5476A4; }
+      .footer__socials-item:nth-child(2) :hover {
+        fill: #4A68AD; }
+      .footer__socials-item:last-child :hover {
+        fill: #37373F; }
   .footer__language {
     /* styling */
     background-color: white;

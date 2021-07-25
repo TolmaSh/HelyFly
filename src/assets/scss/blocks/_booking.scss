@@ -58,6 +58,14 @@
         &-btn {
             cursor: pointer;
             display: none;
+            svg {
+                width: 35px;
+                height: 35px;
+                fill:#83888A;
+                &:hover {
+                    fill:$accentColor;
+                }
+            }
             @include media(xs){
                 display: block;
                 padding-left: 14px;

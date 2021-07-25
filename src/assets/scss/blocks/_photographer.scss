@@ -49,6 +49,15 @@
             position: absolute;
             right: 0;
             top: 0;
+            svg {
+                fill: none;
+                width: 31px;
+                height: 27px;
+                &:hover {
+                    
+                    fill:#FC9B09;
+                }
+            }
             @include media(xs){
                 right: 100px;
             }
