@@ -747,7 +747,8 @@ button {
       .booking__date-btn svg {
         width: 35px;
         height: 35px;
-        fill: #83888A; }
+        fill: #83888A;
+        transition: fill .3s ease-in-out; }
         .booking__date-btn svg:hover {
           fill: #FC9B09; }
       @media (min-width: 576px) {
@@ -796,7 +797,11 @@ button {
       -webkit-border-radius: 5%;
       -moz-border-radius: 5%;
       -ms-border-radius: 5%;
-      -o-border-radius: 5%; }
+      -o-border-radius: 5%;
+      transition: all 0.4s ease-in-out; }
+      .booking__info-btn:hover {
+        background-color: #FC9B09;
+        color: #fff; }
       @media (min-width: 576px) {
         .booking__info-btn {
           margin-right: 30px; } }
@@ -1180,7 +1185,12 @@ button {
       line-height: 17px;
       font-weight: 400;
       color: #B3B3B3; }
+      .footer__copyright-text:hover {
+        color: #555555; }
       .footer__copyright-text:last-child {
         margin-top: 10px; }
+    .footer__copyright-link {
+      text-decoration: none;
+      color: inherit; }
 
 /*# sourceMappingURL=style.min.css.map */

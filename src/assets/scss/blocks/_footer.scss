@@ -109,14 +109,22 @@
             justify-content: center;
             
             grid-column-start: 1;
-                grid-column-end: 3;
+            grid-column-end: 3;
+               
             &-text {
-                
+                &:hover {
+                    color:#555555;
+                    }
                 @include text(14px,17px,400);
                 color: #B3B3B3;
                 &:last-child {
                     margin-top: 10px;
                 }
+            }
+            &-link{
+                text-decoration: none;
+                color: inherit;
+                
             }
         }
     }
