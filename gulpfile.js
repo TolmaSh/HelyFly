@@ -28,6 +28,7 @@ const path = {
     src: {
         html:   srcPath + "*.html",
         js:     srcPath + "assets/js/*.js",
+        jsLibrary:     srcPath + "assets/js/library/*.js",
         css:    srcPath + "assets/scss/**/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
@@ -36,6 +37,7 @@ const path = {
     build: {
         html:   distPath,
         js:     distPath + "assets/js/",
+        jsLibrary:     distPath + "assets/js/library/",
         css:    distPath + "assets/css/",
         images: distPath + "assets/images/",
         fonts:  distPath + "assets/fonts/"
@@ -44,6 +46,7 @@ const path = {
     watch: {
         html:   srcPath + "**/*.html",
         js:     srcPath + "assets/js/**/*.js",
+        jsLibrary:     srcPath + "assets/js/library/*.js",
         css:    srcPath + "assets/scss/**/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
@@ -53,9 +56,15 @@ const path = {
 
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
-    srcPath + 'assets/js/lib.js',
     srcPath + 'assets/js/main.js'
 ]
+
+
+const jsLibFiles = [
+    srcPath + 'assets/js/library/lib.js'
+    
+]
+
 
 
 // TASKS
@@ -173,6 +182,29 @@ function js(cb) {
     cb();
 }
 
+function jsLibrary(cb) {
+    return src(jsLibFiles)
+        .pipe(sourcemaps.init())
+        .pipe(plumber({
+            errorHandler : function(err) {
+                notify.onError({
+                    title:    "JS Error",
+                    message:  "Error: <%= error.message %>"
+                })(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(concat('lib.js'))
+        .pipe(uglify({ 
+            toplevel: true
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(dest(path.build.jsLibrary))
+        .pipe(browserSync.reload({stream: true}));
+
+    cb();
+}
+
 // Для быстрой компиляции JS во время разработки 
 function jsWatch(cb) {
     return src(jsFiles) // если порядок не важен, то берем все файлы: return src(path.src.js, {base: srcPath + 'assets/js/'})
@@ -242,13 +274,14 @@ function watchFiles() {
 }
 
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build
+const build = gulp.series(clean, gulp.parallel(html, css, jsLibrary,  js, images, fonts)); // Будет запускаться по команде gulp build
 const watch = gulp.parallel(build, watchFiles, serve); // Будет запускаться по дефолтной команде gulp 
 
 
 // Экспорты тасок
 exports.html = html;
 exports.css = css;
+exports.jsLibrary = jsLibrary;
 exports.js = js;
 exports.images = images;
 exports.fonts = fonts;

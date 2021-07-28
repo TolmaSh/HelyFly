@@ -662,6 +662,12 @@ button {
     position: absolute;
     right: 0;
     top: 0; }
+    .photographer__img-heart svg {
+      fill: none;
+      width: 31px;
+      height: 27px; }
+      .photographer__img-heart svg:hover {
+        fill: #FC9B09; }
     @media (min-width: 576px) {
       .photographer__img-heart {
         right: 100px; } }
@@ -821,6 +827,13 @@ button {
     .booking__date-btn {
       cursor: pointer;
       display: none; }
+      .booking__date-btn svg {
+        width: 35px;
+        height: 35px;
+        fill: #83888A;
+        transition: fill .3s ease-in-out; }
+        .booking__date-btn svg:hover {
+          fill: #FC9B09; }
       @media (min-width: 576px) {
         .booking__date-btn {
           display: block;
@@ -872,7 +885,11 @@ button {
       -webkit-border-radius: 5%;
       -moz-border-radius: 5%;
       -ms-border-radius: 5%;
-      -o-border-radius: 5%; }
+      -o-border-radius: 5%;
+      transition: all 0.4s ease-in-out; }
+      .booking__info-btn:hover {
+        background-color: #FC9B09;
+        color: #fff; }
       @media (min-width: 576px) {
         .booking__info-btn {
           margin-right: 30px; } }
@@ -1226,18 +1243,19 @@ button {
     -ms-flex-align: center;
         align-items: center;
     gap: 30px; }
-    .footer__socials-item {
-      width: 25px;
+    .footer__socials-item svg {
       fill: gray;
-      transition: fill 4.5s ease-in; }
-      .footer__socials-item:first-child {
-        margin-left: 0; }
-        .footer__socials-item:first-child :hover {
-          fill: #5476A4; }
-      .footer__socials-item:nth-child(2) :hover {
-        fill: #4A68AD; }
-      .footer__socials-item:last-child :hover {
-        fill: #37373F; }
+      max-height: 25px;
+      width: 25px;
+      transition: fill .3s ease-in-out; }
+    .footer__socials-item:first-child {
+      margin-left: 0; }
+      .footer__socials-item:first-child :hover {
+        fill: #5476A4; }
+    .footer__socials-item:nth-child(2) :hover {
+      fill: #4A68AD; }
+    .footer__socials-item:last-child :hover {
+      fill: #37373F; }
   .footer__language {
     /* styling */
     background-color: white;
@@ -1280,5 +1298,10 @@ button {
       line-height: 17px;
       font-weight: 400;
       color: #B3B3B3; }
+      .footer__copyright-text:hover {
+        color: #555555; }
       .footer__copyright-text:last-child {
         margin-top: 10px; }
+    .footer__copyright-link {
+      text-decoration: none;
+      color: inherit; }
