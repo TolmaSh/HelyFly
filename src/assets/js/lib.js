@@ -1,3 +1,5 @@
+
+// SWIPER
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -11,3 +13,9 @@ const swiper = new Swiper('.swiper-container', {
   
 
   });
+
+  // LIGHTGALLERY
+
+  lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+    thumbnail: true,
+});

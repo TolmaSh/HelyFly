@@ -56,13 +56,15 @@ const path = {
 
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
+    srcPath + 'assets/js/lib.js',
     srcPath + 'assets/js/main.js'
 ]
 
 
 const jsLibFiles = [
-    srcPath + 'assets/js/library/lib.js'
-    
+    srcPath + 'assets/js/library/lightgallery.min.js',
+    srcPath + 'assets/js/library/lg-zoom.umd.js',
+    srcPath + 'assets/js/library/lg-thumbnail.umd'
 ]
 
 
