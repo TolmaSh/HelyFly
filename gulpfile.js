@@ -64,7 +64,8 @@ const jsFiles = [
 const jsLibFiles = [
     srcPath + 'assets/js/library/lightgallery.umd.js',
     srcPath + 'assets/js/library/lg-zoom.umd.js',
-    srcPath + 'assets/js/library/lg-thumbnail.umd.js'
+    srcPath + 'assets/js/library/lg-thumbnail.umd.js',
+    srcPath + 'assets/js/library/lg-video.umd.js'
 ]
 
 

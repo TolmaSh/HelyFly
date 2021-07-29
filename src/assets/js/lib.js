@@ -19,3 +19,5 @@ const swiper = new Swiper('.swiper-container', {
   lightGallery(document.getElementById('animated-thumbnails-gallery'), {
     thumbnail: true,
 });
+
+lightGallery(document.getElementById('video-gallery'));

@@ -1865,7 +1865,8 @@ button {
     background-color: #fff;
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0;
+    cursor: pointer; }
     .photographer__img-heart svg {
       fill: none;
       width: 31px;

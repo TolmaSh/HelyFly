@@ -95,7 +95,8 @@
             margin-top: 15px;
         }
     }
-    &__image {
+    &__video {
+        cursor: pointer;
         grid-area: image;
         margin-top: 13px;
         position: relative;
