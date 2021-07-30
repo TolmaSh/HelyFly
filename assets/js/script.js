@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper-container', {
     thumbnail: true,
 });
 
-lightGallery(document.getElementById('video-gallery'));
+lightGallery(document.getElementById('gallery-videos-demo'));
 
 
 

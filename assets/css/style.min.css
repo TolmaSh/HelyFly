@@ -1982,6 +1982,9 @@ button {
     transform: rotate(135deg);
     margin-left: 0.5em; }
 
+.photographer__more {
+  display: none; }
+
 .booking {
   padding-bottom: 45px; }
   @media (min-width: 1280px) {
