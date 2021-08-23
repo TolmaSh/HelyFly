@@ -1862,6 +1862,20 @@ button {
       -moz-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
       -o-transform: rotate(135deg); }
+  .gallery .btn--show:after {
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg); }
+  .gallery .btn--show:before {
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg); }
+  .gallery--hide {
+    display: none; }
 
 .photographer__wrapper {
   padding-bottom: 50px; }
@@ -1924,6 +1938,8 @@ button {
       height: 27px; }
       .photographer__img-heart svg:hover {
         fill: #FC9B09; }
+    .photographer__img-heart svg.like {
+      fill: #FC9B09; }
     @media (min-width: 576px) {
       .photographer__img-heart {
         right: 100px; } }

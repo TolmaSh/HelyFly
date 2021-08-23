@@ -1458,27 +1458,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background: transparent;
   outline: none;
   transition: 1s ease-in-out; }
-  .btn svg {
-    position: absolute;
-    left: -3px;
-    top: -3px;
-    fill: none;
-    stroke: #fff;
-    stroke-dasharray: 250 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-    width: 304px;
-    height: 68px;
-    border-radius: 7px; }
 
 .btn:hover {
-  transition: 1s ease-in-out;
+  transition: 0.8s ease-in-out;
   background: #FC9B09; }
-  .btn:hover svg {
-    stroke: orange; }
-
-.btn:hover svg {
-  stroke-dashoffset: -480; }
 
 .btn span {
   color: white;
@@ -1687,6 +1670,8 @@ button {
         font-size: 18px;
         line-height: 22px;
         font-weight: 900; } }
+    .main__btn:hover {
+      border: 3px solid #FC9B09; }
 
 .info {
   padding-top: 40px; }

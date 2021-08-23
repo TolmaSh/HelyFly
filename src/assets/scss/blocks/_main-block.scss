@@ -93,5 +93,8 @@
             width: 304px;
             @include text(18px, 22px , 900); 
         }
+        &:hover {
+            border: 3px solid $accentColor;
+        }
     }
 }
