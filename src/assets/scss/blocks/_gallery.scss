@@ -63,7 +63,6 @@
         }
         &:before {
             position: relative;
-            
             content: "";
             display: inline-block;
             width: 0.4em;
@@ -79,7 +78,6 @@
         }
         &:after {
             position: relative;
-            
             content: "";
             display: inline-block;
             width: 0.4em;
@@ -93,5 +91,25 @@
             -ms-transform: rotate(135deg);
             -o-transform: rotate(135deg);
         }          
+        
+    }
+    .btn--show {
+        &:after {
+            transform: rotate(315deg);
+            -webkit-transform: rotate(315deg);
+            -moz-transform: rotate(315deg);
+            -ms-transform: rotate(315deg);
+            -o-transform: rotate(315deg);
+        }
+        &:before {
+            transform: rotate(315deg);
+            -webkit-transform: rotate(315deg);
+            -moz-transform: rotate(315deg);
+            -ms-transform: rotate(315deg);
+            -o-transform: rotate(315deg);
+        }
+    }
+    &--hide {
+        display: none;
     }
 }
