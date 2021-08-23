@@ -20,3 +20,11 @@ function showMoreBtn() {
     
 }
 // GALLERY END
+
+// PHOTOGRAPHER 
+
+const heart = document.querySelector(".photographer__img-heart > svg");
+heart.addEventListener('click', () => {
+    heart.classList.toggle('like')
+    
+})

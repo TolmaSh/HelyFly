@@ -1960,6 +1960,8 @@ button {
       height: 27px; }
       .photographer__img-heart svg:hover {
         fill: #FC9B09; }
+    .photographer__img-heart svg.like {
+      fill: #FC9B09; }
     @media (min-width: 576px) {
       .photographer__img-heart {
         right: 100px; } }
