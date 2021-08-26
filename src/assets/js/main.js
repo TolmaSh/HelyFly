@@ -17,7 +17,6 @@ function galleryHide() {
 function showMoreBtn() {
     showMore.classList.toggle('btn--show');
     showMore.innerHTML = (showMore.className != 'gallery__btn btn--show') ? 'Показать все фото' : 'Скрыть все фото';
-    
 }
 // GALLERY END
 
