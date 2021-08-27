@@ -2026,31 +2026,45 @@ button {
     display: block;
     margin-top: 35px; }
 
-.photographer__about-link {
+.photographer__about-detail {
   font-size: 16px;
   line-height: 23px;
   font-weight: 400;
   color: #5286EC;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  margin-top: 22px; }
+  display: inline-block;
+  position: relative;
+  margin-top: 22px;
+  cursor: pointer; }
   @media (min-width: 768px) {
-    .photographer__about-link {
+    .photographer__about-detail {
       margin-top: 10px; } }
-  .photographer__about-link::after {
-    position: relative;
+  .photographer__about-detail::after {
+    position: absolute;
     content: "";
     display: inline-block;
+    top: 7px;
+    right: -19px;
     width: 0.4em;
     height: 0.4em;
     border-right: 0.1em solid #C7C7C7;
     border-top: 0.1em solid #C7C7C7;
-    transform: rotate(135deg);
-    margin-left: 0.5em; }
-
-.photographer__more {
-  display: none; }
+    transform: rotate(135deg); }
+  .photographer__about-detail ::marker {
+    content: ""; }
+  .photographer__about-detail span {
+    color: black; }
+  .photographer__about-detail[open]::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 10px;
+    right: 80px;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.1em solid #C7C7C7;
+    border-top: 0.1em solid #C7C7C7;
+    transform: rotate(315deg); }
 
 .booking {
   padding-bottom: 45px; }
