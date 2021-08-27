@@ -121,20 +121,24 @@
                 margin-top: 35px;
             }
         }
-        &-link {
+        &-detail {
             @include text(16px,23px,400);
             color:$linkColor;
             text-decoration: none;
-            display: flex;
-            align-items: center;
+            display: inline-block;
+            position: relative;
             margin-top: 22px;
+            cursor: pointer;
+            
             @include media(sm){
                 margin-top: 10px;
             }
             &::after {
-                position: relative;
+                position: absolute;
                 content: "";
                 display: inline-block;
+                top: 7px;
+                right: -19px;
                 width: 0.4em;
                 height: 0.4em;
                 border-right: 0.1em solid #C7C7C7;
@@ -142,12 +146,30 @@
                 transform: rotate(
             135deg
             );
-                margin-left: 0.5em;
+            }
+            ::marker {
+                content: "";
+            }
+            span {
+                color:black;
+            }
+            &[open] {
+                &::after {
+                    position: absolute;
+                    content: "";
+                    display: inline-block;
+                    top: 10px;
+                    right: 80px;
+                    width: 0.4em;
+                    height: 0.4em;
+                    border-right: 0.1em solid #C7C7C7;
+                    border-top: 0.1em solid #C7C7C7;
+                    transform: rotate(
+                315deg
+                );
+                }
             }
         }
 
-    }
-    &__more {
-     display: none;
     }
 }
